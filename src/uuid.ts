@@ -1,3 +1,4 @@
+  // tslint:disable:no-bitwise
 import { pseudoRandomBytes } from 'crypto';
 
 /**
@@ -11,7 +12,6 @@ export function generateUUID(): string {
   const bytes = pseudoRandomBytes(16);
 
   // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-  // tslint:disable:no-bitwise
   bytes[6] = (bytes[6] & 0x0f) | 0x40; // version to 4
   bytes[8] = (bytes[8] & 0x3f) | 0x80;
 
