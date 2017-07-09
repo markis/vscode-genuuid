@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 
 node_js:
-- '7'
+- '8'
 
 os:
   - osx
@@ -15,9 +15,18 @@ before_install:
       sleep 3;
     fi
 
+  - npm install -g npm@5
+  - npm install -g greenkeeper-lockfile@1
+
 install:
   - npm install
   - npm run vscode:prepublish
 
+before_script:
+  - greenkeeper-lockfile-update
+
 script:
   - npm test --silent
+
+after_script:
+  - greenkeeper-lockfile-upload
