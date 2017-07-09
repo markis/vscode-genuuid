@@ -1,0 +1,20 @@
+environment:
+  ELECTRON_RUN_AS_NODE: 1
+  VSCODE_BUILD_VERBOSE: true
+
+install:
+  - ps: Install-Product node 7.4.0 x64
+  - npm install
+  - npm run vscode:prepublish
+
+# Post-install test scripts.
+test_script:
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+
+  # unit tests
+  - npm test
+
+# Don't actually build.
+build: off
