@@ -3,7 +3,7 @@
   "displayName": "Insert UUID/GUID",
   "description": "Simple Insert UUID/GUID. Nothing fancy.",
   "icon": "images/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "markis",
   "private": true,
   "repository": {
