@@ -1,7 +1,8 @@
 {
   "name": "genuuid",
   "displayName": "Insert UUID/GUID",
-  "description": "Insert UUID/GUID",
+  "description": "Simple Insert UUID/GUID. Nothing fancy.",
+  "icon": "images/icon.png",
   "version": "1.0.0",
   "publisher": "markis",
   "private": true,
