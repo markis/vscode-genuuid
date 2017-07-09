@@ -2,12 +2,12 @@
   "name": "genuuid",
   "displayName": "Insert UUID/GUID",
   "description": "Insert UUID/GUID",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "publisher": "markis",
   "private": true,
   "repository": {
-      "type": "git",
-      "url": "https://github.com/markis/vscode-genuuid.git"
+    "type": "git",
+    "url": "https://github.com/markis/vscode-genuuid.git"
   },
   "engines": {
     "vscode": "^1.13.0"
